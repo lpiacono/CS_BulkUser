@@ -1,0 +1,37 @@
+﻿{
+  "ClientID": "replaceme",
+  "ClientSecret": "replaceme",
+  "Email_File": ".\\emails.txt",
+  "Roles": [
+            "
+            \"falconhost_admin\",
+            \"falconhost_analyst\"
+            "
+           ],
+  "_Roles_List_Example": 
+                [
+                "
+                \"device_control_manager\",
+                \"endpoint_manager\",
+                \"event_viewer\",
+                \"falconhost_admin\",
+                \"falconhost_analyst\",
+                \"falconhost_investigator\",
+                \"falconhost_read_only\",
+                \"intel_admin\",
+                \"intel_all_analyst\",
+                \"intel_basic_analyst\",
+                \"intel_ecrime_analyst\",
+                \"intel_malware_submitter\",
+                \"intel_targeted_analyst\",
+                \"prevention_hashes_manager\",
+                \"quarantine_manager\",
+                \"remote_responder\",
+                \"remote_responder_one\",
+                \"remote_responder_three\",
+                \"samplestore_sample_submitter\",
+                \"security_lead\",
+                \"vulnerability_manager\"
+                "
+                ]
+}
