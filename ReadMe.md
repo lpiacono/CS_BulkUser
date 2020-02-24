@@ -15,20 +15,20 @@ This ReadMe file describes the usage of the CS Falcon User Script.
 (This Script is written for use with PowerShell.)
 (No other Scripting Libraries or Packages are required for use.)
 
-1. Edit emails.txt:
+* Edit emails.txt:
 
-a. Include full list of email addresses you'd like to add to CS Falcon.
-b. Emails should be one per line.
+1. Include full list of email addresses you'd like to add to CS Falcon.
+2. Emails should be one per line.
 
-2. Edit config.json:
+* Edit config.json:
 
-a. Client ID (OAuth Client ID from CS Falcon API Key Page) 
-b. Client Secret (OAuth Client Secret from CS Falcon API Key Page)
+1. Client ID (OAuth Client ID from CS Falcon API Key Page) 
+2. Client Secret (OAuth Client Secret from CS Falcon API Key Page)
 
 Both Client ID and Client Secret must be from the instance you'd like to Bulk Upload Users to.
 Different Falcon Instances (CID) will have different Client ID and Client Secret.
 
-c. Specify what Roles you'd like the Users to be assigned as part of the Upload.
+* Specify what Roles you'd like the Users to be assigned as part of the Upload.
 
 Users can be added to Falcon with one or more Roles.
 Ensure you follow the specified Format. An example exists in config.json.
