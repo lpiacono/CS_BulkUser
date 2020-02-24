@@ -18,6 +18,13 @@ This ReadMe file describes the usage of the CS Falcon User Script.
 1. Include full list of email addresses you'd like to add to CS Falcon.
 2. Emails should be one per line.
 
+```
+example1@crowdstrike.com
+example2@crowdstrike.com
+
+```
+
+
 * Edit config.json:
 
 1. Client ID (OAuth Client ID from CS Falcon API Key Page) 
