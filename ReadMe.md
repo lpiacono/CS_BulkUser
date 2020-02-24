@@ -1,6 +1,4 @@
-# Project Title
-
-CrowdStrike Falcon Bulk User Upload Script
+# CrowdStrike Falcon Bulk User Upload Script
 
 ## Author
 
