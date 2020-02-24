@@ -31,8 +31,8 @@ Different Falcon Instances (CID) will have different Client ID and Client Secret
 * Specify what Roles you'd like the Users to be assigned as part of the Upload.
 
 Users can be added to Falcon with one or more Roles.
-Ensure you follow the specified Format. An example exists in config.json.
-Backslashes for double quotes and commas if more than one role specified should remain:
+Ensure you follow the specified Format. An example exists in config.json: 
+Backslashes remain to escape  double quotes and commas are used if more than one role is specified:
 
 ```
 "Roles": [
