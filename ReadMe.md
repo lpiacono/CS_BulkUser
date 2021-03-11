@@ -4,6 +4,19 @@
 
 leandro.iacono@crowdstrike.com
 
+## Disclaimer
+
+This sample scripts is not supported under any CrowdStrike standard support program or service. 
+
+This sample script is provided AS IS without warranty of any kind. 
+
+CrowdStrike further disclaims all implied warranties including, without limitation, any implied warranties of merchantability
+or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and 
+documentation remains with you. In no event shall CrowdStrike, its authors, or anyone else involved in the creation, production, 
+or delivery of the script/s be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, 
+business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the 
+sample scripts or documentation, even if CrowdStrike has been advised of the possibility of such damages.
+
 ## Getting Started
 
 This ReadMe file describes the usage of the CS Falcon User Script. 
@@ -29,9 +42,13 @@ example2@crowdstrike.com
 
 1. Client ID (OAuth Client ID from CS Falcon API Key Page) 
 2. Client Secret (OAuth Client Secret from CS Falcon API Key Page)
+3. URL is the Falcon Cloud API URL you want to connect to. 
+4.
 
 Both Client ID and Client Secret must be from the instance you'd like to Bulk Upload Users to.
 Different Falcon Instances (CID) will have different Client ID and Client Secret.
+Different CrowdStrike Falcon clouds use different API URLS. For example, US1 Instances should use "https://api.crowdstrike.com"
+For more information on these settings, visit: https://falcon.crowdstrike.com/support/documentation/46/crowdstrike-oauth2-based-apis
 
 * Specify what Roles you'd like the Users to be assigned as part of the Upload.
 
@@ -84,17 +101,4 @@ Full List of supported Roles as of the creation of this Script:
 
 ## Questions
 
-* Contact your CS Representative
-
-## Disclaimer
-
-This sample scripts is not supported under any CrowdStrike standard support program or service. 
-
-This sample script is provided AS IS without warranty of any kind. 
-
-CrowdStrike further disclaims all implied warranties including, without limitation, any implied warranties of merchantability
-or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and 
-documentation remains with you. In no event shall CrowdStrike, its authors, or anyone else involved in the creation, production, 
-or delivery of the script/s be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, 
-business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the 
-sample scripts or documentation, even if CrowdStrike has been advised of the possibility of such damages.
+* Contact your CrowdStrike Representative.

@@ -2,6 +2,7 @@
   "ClientID": "replaceme",
   "ClientSecret": "replaceme",
   "Email_File": ".\\emails.txt",
+  "URL": "https://api.crowdstrike.com",
   "Roles": [
             "
             \"falconhost_admin\",
@@ -11,6 +12,10 @@
   "_Roles_List_Example": 
                 [
                 "
+                \"binarly_admin\",
+                \"binarly_user\",
+                \"custom_ioas_manager\",
+                \"dashboard_admin\",
                 \"device_control_manager\",
                 \"endpoint_manager\",
                 \"event_viewer\",
@@ -18,6 +23,7 @@
                 \"falconhost_analyst\",
                 \"falconhost_investigator\",
                 \"falconhost_read_only\",
+                \"firewall_manager\",
                 \"intel_admin\",
                 \"intel_all_analyst\",
                 \"intel_basic_analyst\",
@@ -29,7 +35,6 @@
                 \"remote_responder\",
                 \"remote_responder_one\",
                 \"remote_responder_three\",
-                \"samplestore_sample_submitter\",
                 \"security_lead\",
                 \"vulnerability_manager\"
                 "

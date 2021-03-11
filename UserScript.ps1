@@ -28,6 +28,7 @@ $c_id = $config.ClientID
 $c_se = $config.ClientSecret
 $roles = $config.Roles
 $filepath = $config.Email_File
+$uri = $config.URL
 
 <# Older Read-Host Values replaced with JSON Config File
 $c_id = Read-Host -Prompt "ClientID“
@@ -46,7 +47,7 @@ $params = @{
 }
 
 #Fill Array to get OAuth Token
-$params.Uri = 'https://api.crowdstrike.com/oauth2/token'
+$params.Uri = $uri + '/oauth2/token'
 $params.Method = 'POST'
 $params.Body ="client_id=“ + $c_id + “&client_secret=“ + $c_se
 $params.ContentType = 'application/x-www-form-urlencoded'
@@ -72,7 +73,9 @@ if ($confirm -eq "Y" -or $confirm -eq "y")
         ForEach ($email in $file) 
             {
 
-                $params.Uri = 'https://api.crowdstrike.com/users/entities/users/v1'
+                Write-Host -BackgroundColor Yellow -ForegroundColor Black "`n Adding the Following Email to Falcon Instance:" + $email + " `n"
+
+                $params.Uri = $uri + '/users/entities/users/v1'
                 $params.Headers.Authorization = "Bearer $token"
                 $params.Body = ”{`”uid`":`"" + $email + "`"}”
                 $params.ContentType = 'application/json'
@@ -80,7 +83,7 @@ if ($confirm -eq "Y" -or $confirm -eq "y")
                 $r2 = Invoke-RestMethod @params
                 #$r2 | ConvertTo-Json
 
-                $params.Uri = 'https://api.crowdstrike.com/user-roles/entities/user-roles/v1?user_uuid=' + $r2.resources.uuid 
+                $params.Uri = $uri + '/user-roles/entities/user-roles/v1?user_uuid=' + $r2.resources.uuid 
                 $params.Body = "{`"roleIds`": [" + $roles + "]}"
 
                 $r3 = Invoke-RestMethod @params
@@ -90,10 +93,7 @@ if ($confirm -eq "Y" -or $confirm -eq "y")
         }
 else
     {
-    Write-Host -BackgroundColor Red -ForegroundColor Black "`n SCRIPT TERMINATED"
+    Write-Host -BackgroundColor Red -ForegroundColor Black "`n EXECUTION TERMINATED. `n"
     }
 
-
-
-
-
+Write-Host -BackgroundColor Yellow -ForegroundColor Black "`n SCRIPT ENDED. `n"
