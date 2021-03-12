@@ -67,12 +67,16 @@ Backslashes remain to escape  double quotes and commas are used if more than one
 In the above example, users added to the CS Falcon platform via the script will be assigned the Falcon Administrator and Falcon Analyst Role.
 If assigning more than one role, ensure they are comma-seperated and on a new line.
 
-Full List of supported Roles as of the creation of this Script:
+Partial List of CrowdStrike Falcon Roles that can be assigned to users, as of the commit date:
 
 ```
   "Roles": 
                 [
                 "
+                \"binarly_admin\",
+                \"binarly_user\",
+                \"custom_ioas_manager\",
+                \"dashboard_admin\",
                 \"device_control_manager\",
                 \"endpoint_manager\",
                 \"event_viewer\",
@@ -80,6 +84,7 @@ Full List of supported Roles as of the creation of this Script:
                 \"falconhost_analyst\",
                 \"falconhost_investigator\",
                 \"falconhost_read_only\",
+                \"firewall_manager\",
                 \"intel_admin\",
                 \"intel_all_analyst\",
                 \"intel_basic_analyst\",
@@ -91,7 +96,6 @@ Full List of supported Roles as of the creation of this Script:
                 \"remote_responder\",
                 \"remote_responder_one\",
                 \"remote_responder_three\",
-                \"samplestore_sample_submitter\",
                 \"security_lead\",
                 \"vulnerability_manager\"
                 "
