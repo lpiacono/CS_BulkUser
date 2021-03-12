@@ -42,8 +42,7 @@ example2@crowdstrike.com
 
 1. Client ID (OAuth Client ID from CS Falcon API Key Page) 
 2. Client Secret (OAuth Client Secret from CS Falcon API Key Page)
-3. URL is the Falcon Cloud API URL you want to connect to. 
-4.
+3. URL is the Falcon Cloud API URL you want to connect to.
 
 Both Client ID and Client Secret must be from the instance you'd like to Bulk Upload Users to.
 Different Falcon Instances (CID) will have different Client ID and Client Secret.
